@@ -1,0 +1,10 @@
+[
+    {
+        "id": "current_color",
+        "title": "Current color"
+    },
+    {
+        "id": "next_step",
+        "title": "Next step"
+    }
+]
