@@ -23,7 +23,7 @@ class APISession(requests.Session):
 
 
 class APIClient(slumber.API):
-    def __init__(self, ip, port, token):
+    def __init__(self, token, ip="localhost", port=80):
         super().__init__(
             "http://{}:{}/api/".format(ip, port),
             session=APISession()

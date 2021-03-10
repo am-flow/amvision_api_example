@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 
 def upload_all(address, port, token):
     # instantiate API client
-    api = APIClient(address, port, token)
+    api = APIClient(token, address, port)
 
     # load design references
     with open('data/design_references.json') as in_file:
