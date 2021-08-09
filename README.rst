@@ -15,7 +15,7 @@ Usage
 
 Upload prints using::
 
-    python -m upload_prints.py [-a ADDRESS] [-p PORT] token
+    python -m upload_prints [-a ADDRESS] [-p PORT] token
 
 The token is the authentication token you have been given to access your AM-Vision machine or sandbox.
 The IP address and port of your machine should also be specified 
