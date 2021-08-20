@@ -21,5 +21,6 @@ The url is the target URL and token is the authentication token you have been gi
 
 Example
 -----
-
-`python -m upload_prints -u http://localhost/api/ 12a34bc5d6e6b9fgh78ijkl901mno234f567890`
+```
+python -m upload_prints -u http://localhost/api/ 12a34bc5d6e6b9fgh78ijkl901mno234f567890
+```
