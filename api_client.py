@@ -23,11 +23,8 @@ class APISession(requests.Session):
 
 
 class APIClient(slumber.API):
-    def __init__(self, protocol, token, ip="localhost", port=80):
-        super().__init__(
-            "{}://{}:{}/api/".format(protocol, ip, port),
-            session=APISession()
-        )
+    def __init__(self, url, token):
+        super().__init__(url, session=APISession())
         # add authentication header to slumber's default api client
         self._store['session'].auth = None
         self._store['session'].headers['Authorization'] = "Token " + token

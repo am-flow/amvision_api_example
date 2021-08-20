@@ -15,8 +15,11 @@ Usage
 
 Upload prints using::
 
-    python -m upload_prints [-r REQUEST PROTOCOL] [-a ADDRESS] [-p PORT] token
+    python -m upload_prints [-u URL] token
 
-The token is the authentication token you have been given to access your AM-Vision machine or sandbox.
-The IP address and port of your machine should also be specified. The Request Protocol is either http or https. 
+The url is the target URL and token is the authentication token you have been given to access your AM-Vision machine or sandbox.
 
+Example
+-----
+
+`python -m upload_prints -u http://localhost/api/ 12a34bc5d6e6b9fgh78ijkl901mno234f567890`
