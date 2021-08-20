@@ -78,5 +78,5 @@ if __name__ == '__main__':
     )
 
     log.info("Starting upload")
-    upload_all(args.rptocol, args.address, args.port, args.token)
+    upload_all(args.protocol, args.address, args.port, args.token)
     log.info("Upload completed")
