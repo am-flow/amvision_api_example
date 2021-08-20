@@ -20,7 +20,9 @@ Upload prints using::
 The url is the target URL and token is the authentication token you have been given to access your AM-Vision machine or sandbox.
 
 Example
------
-```
-python -m upload_prints -u http://localhost/api/ 12a34bc5d6e6b9fgh78ijkl901mno234f567890
-```
+-------
+
+To upload prints on localhost::
+
+    python -m upload_prints -u http://localhost/api/ 12a34bc5d6e6b9fgh78ijkl901mno234f567890
+
