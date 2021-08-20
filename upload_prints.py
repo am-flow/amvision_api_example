@@ -9,9 +9,9 @@ from api_client import APIClient
 log = logging.getLogger(__name__)
 
 
-def upload_all(address, port, token):
+def upload_all(protocol, address, port, token):
     # instantiate API client
-    api = APIClient(token, address, port)
+    api = APIClient(protocol, token, address, port)
 
     # load design references
     with open('data/design_references.json') as in_file:
@@ -63,6 +63,9 @@ if __name__ == '__main__':
         'token', type=str, help='API token'
     )
     parser.add_argument(
+        '-r', '--protocol', type=str, help='Request Protocol', default='http'
+    )
+    parser.add_argument(
         '-a', '--address', type=str, help='Server address', default='localhost'
     )
     parser.add_argument(
@@ -75,5 +78,5 @@ if __name__ == '__main__':
     )
 
     log.info("Starting upload")
-    upload_all(args.address, args.port, args.token)
+    upload_all(args.rptocol, args.address, args.port, args.token)
     log.info("Upload completed")
