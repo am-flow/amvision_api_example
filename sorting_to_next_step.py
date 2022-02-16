@@ -168,7 +168,7 @@ def sort_to_next_step(url, token):
         "title": "Tray 240",
         "query": "tray=240",
     }
-    api.batch.post(batch)
+    api.batch.put([batch])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='AM-Vision API sorting by next step')
