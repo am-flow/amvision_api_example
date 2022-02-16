@@ -168,6 +168,7 @@ def sort_to_next_step(url, token):
         "title": "Tray 240",
         "query": "tray=240",
     }
+    # using PUT here instead of POST unlike the tutorial to prevent already-exists-error
     api.batch.put([batch])
 
 if __name__ == '__main__':
