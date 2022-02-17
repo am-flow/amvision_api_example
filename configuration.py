@@ -59,7 +59,7 @@ def perform_configuration(url, token):
         {
             "id": "order",
             "title": "Order #",
-            "field": "order",
+            "field": "order_id",
             "datatype": "NUMBER",
             "filtering": True,
             "sorting": False,
