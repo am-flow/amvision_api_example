@@ -13,17 +13,20 @@ To run the sample code, you will need to use python 3 (tested on 3.8), and you'l
 Usage
 -----
 
-Upload prints using::
+Please see the API tutorial for more explanation of what each script does.
 
-    python -m upload_prints [-u URL] token
+You can run the `One-time configuration` example code using::
 
-The url is the target URL and token is the authentication token you have been given to access your AM-Vision machine or sandbox.
+    python configuration.py [API_URL] [API_TOKEN]
 
-Example
--------
+You can run the `Sorting to next step` example code using::
 
-To upload prints on localhost::
+    python sorting_to_next_step.py [API_URL] [API_TOKEN]
 
-    python -m upload_prints -u http://localhost/api/ 12a34bc5d6e6b9fgh78ijkl901mno234f567890
-Note: Use a valid token
+You can run the `Sorting to order` example code using::
 
+    python sorting_to_order.py [API_URL] [API_TOKEN]
+
+
+:API_URL: is the full url to the api of your AM-Vision machine or sandbox, e.g. https://192.1.2.3/api/
+:API_TOKEN: is the authorization token for your machine that you should have received from AM-Flow
