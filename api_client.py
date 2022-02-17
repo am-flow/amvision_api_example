@@ -24,6 +24,7 @@ class APISession(requests.Session):
 
 class APIClient(slumber.API):
     def __init__(self, url, token):
+        # this example adds error printing and response time tracking
         super().__init__(url, session=APISession())
         # add authentication header to slumber's default api client
         self._store['session'].auth = None
