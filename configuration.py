@@ -114,7 +114,7 @@ def perform_configuration(url, token):
 
     log.info("Subscribing to the webhook")
     api.webhook.post(
-        {"event": "batch.finalize", "target": "http://example.com/on_batch_sorted/"}
+        {"event": "batch.advance", "target": "http://example.com/on_batch_sorted/"}
     )
 
 
